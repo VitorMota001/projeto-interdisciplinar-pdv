@@ -10,10 +10,9 @@ public class Main {
 	static JTextField nome = new JTextField();
 	static JTextField cpf = new JTextField();
 	
-	static Object[] opcoesIniciar = {"Cadastrar usu·rio","Emprestar livros","Cadastrar livros"};
+	static Object[] opcoesIniciar = {"Cadastrar usu√°rio","Emprestar livros","Cadastrar livros"};
 	static Object[] camposUsuario = {"Nome",nome,"CPF",cpf};
 	
-	static ArrayList <Emprestimo> emprestimos = new ArrayList <>();
 	static ArrayList <Pessoa> pessoas = new ArrayList <>();
 	static ArrayList <Livro> livros = new ArrayList <>();
 	
@@ -21,7 +20,7 @@ public class Main {
 
 	public static void main (String[]args) {
 		
-		int op = JOptionPane.showOptionDialog(null, "Escolha uma opÁ„o", "Menu iniciar", 1, 3, null, opcoesIniciar, null);
+		int op = JOptionPane.showOptionDialog(null, "Escolha uma op√ß√£o", "Menu iniciar", 1, 3, null, opcoesIniciar, null);
 		switch (op) {
 		case 0:
 			cadastrarUsuario();
